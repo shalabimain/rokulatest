@@ -17,7 +17,7 @@ export default {
                 <span class="media-year">Released in {{currentMediaDetails.movies_year}}</span>
             </div>
 
-            <div class="col-12 order-1 order-md-2 col-md-9 media-container">
+            <div class="col-9 order-1 order-md-2 col-md-9 media-container">
                 <video autoplay controls muted :src="'video/' + currentMediaDetails.movies_trailer" class="fs-video"></video>
             </div>
         </div>

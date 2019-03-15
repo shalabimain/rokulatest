@@ -3,7 +3,7 @@ export default {
     props: ['liveuser'],
 
     template: `
-    <div class="col-xs-12 col-sm-6 col-md-4 mx-auto">
+    <div class="col-xs-10 col-sm-6 col-md-6 mx-auto">
         <div class="card rounded" @click="navToUserHome(liveuser.access)">
             <div class="card-body text-center">
                 <img :src="'images/' + liveuser.avatar" class="rounded-circle img-fluid">

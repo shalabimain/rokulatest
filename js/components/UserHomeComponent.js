@@ -9,7 +9,7 @@ export default {
 
   <!-- render this if we're viewing television or film -->
         <div class="row" v-if="activeMediaType == 'video' && retrievedMedia.length > 0">
-            <div class="col-12 order-2 order-md-1 col-md-3 media-container">
+            <div class="col-4 order-1 order-md-1 col-md-12 media-container">
             
                 <h4 class="media-title">{{currentMediaDetails.movies_title}}</h4>
                 <p class="media-details" v-html="currentMediaDetails.movies_storyline"></p>
@@ -17,19 +17,19 @@ export default {
                 <span class="media-year">Released in {{currentMediaDetails.movies_year}}</span>
             </div>
 
-            <div class="col-12 order-1 order-md-2 col-md-9 media-container">
+            <div class="col-12 order-1 order-md-2 col-md-12 media-container">
                 <video autoplay controls muted :src="'video/' + currentMediaDetails.movies_trailer" class="fs-video"></video>
             </div>
         </div>
 
         <div class="row" v-if="activeMediaType == 'audio' && retrievedMedia.length > 0">
-            <div class="col-12 order-2 order-md-1 col-md-6 media-container">
+            <div class="col-12 order-2 order-md-1 col-md-12 media-container">
                 <h4 class="media-title">{{currentMediaDetails.audio_artist}} * {{currentMediaDetails.audio_title}}</h4>
                 <p class="media-details" v-html="currentMediaDetails.audio_storyline"></p>
                 <span class="media-year">Released in {{currentMediaDetails.audio_year}}</span>              
             </div>
 
-            <div class="col-12 order-1 order-md-2 col-md-6 audio-wrapper">
+            <div class="col-12 order-1 order-md-2 col-md-12 audio-wrapper">
                 <audio autoplay controls :src="'audio/' + currentMediaDetails.audio_src"/>
                 <img :src="'images/audio/' + currentMediaDetails.audio_cover" alt="album art" class="img-fluid"/>
             </div>

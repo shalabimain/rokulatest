@@ -4,14 +4,13 @@ html { position: relative; min-height: 100%; }
 
 body {
 	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-	background-color: darkgrey;
+	background-color: rgb(175, 77, 77);
 	color: white;
 	margin-bottom: 100px;
-	background: url(../images/gunmetal.jpg) repeat;
 }
 
 a {
-	color: #00B7FF;
+	color: darkgrey;
 	text-decoration: none;
 }
 
@@ -52,7 +51,7 @@ nav:not(.side-nav) {
 	right: 1em;
 	top: 4.25rem;
 	z-index: 200;
-	color: #333;
+	color: grey;
 	min-width: 175px;
 
 	.toast-body {
